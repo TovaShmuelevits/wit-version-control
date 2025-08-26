@@ -27,50 +27,85 @@ WIT allows developers to track files, create commits, view history, check status
 
 ## Project Structure
 wit-cli/
-├── Commit.py # Commit class (ID, message, datetime)
-├── FileManager.py # File operations (copy, delete, stage, CSV handling)
-├── Repository.py # Core repository logic (init, add, commit, log, status, checkout)
-├── wit.py # CLI commands using Click
-├── requirements.txt # Dependencies
-└── README.md # Project documentation
-
+```
+├── Commit.py       # Commit class (ID, message, datetime)
+├── FileManager.py  # File operations (copy, delete, stage, CSV handling)
+├── Repository.py   # Core repository logic (init, add, commit, log, status, checkout)
+├── wit.py          # CLI commands using Click
+├── requirements.txt# Dependencies
+└── README.md       # Project documentation
+```
 
 ---
 
 ## Installation
+
 Clone the repository and install dependencies:
+
 ```bash
-git clone https://github.com/<username>/wit-cli.git
-cd wit-cli
+git clone https://github.com/<username>/wit-version-control.git
+cd wit-version-control
 pip install -r requirements.txt
+```
 
-Usage
-Initialize repository
+---
+
+## Usage
+
+Initialize repository:
+
+```bash
 wit init
-Add a file
+```
+
+Add a file:
+
+```bash
 wit add example.txt
-Commit changes
+```
+
+Commit changes:
+
+```bash
 wit commit "Initial commit"
-View commit log
+```
+
+View commit log:
+
+```bash
 wit log
-Check repository status
+```
+
+Check repository status:
+
+```bash
 wit status
-Restore to previous commit
+```
+
+Restore to previous commit:
+
+```bash
 wit checkout <commit_id>
+```
 
-Example Output
+---
+
+## Example Output
+
+```bash
 wit log
-ID: j8d9f3k2l1   Message: Initial commit   Date: 2025-08-25T18:41:32.123456
+ID: j8d9f3k2l1   Message: Initial commit       Date: 2025-08-25T18:41:32.123456
 ID: x2f7g9h1qz   Message: Added new feature   Date: 2025-08-25T19:22:05.987654
+```
 
-Future Improvements
-Support for directory tracking (nested folder management).
-Branching and merging functionality.
-More advanced diff view between commits.
+---
 
-Author
+## Future Improvements
+- Support for directory tracking (nested folder management)
+- Branching and merging functionality
+- More advanced diff view between commits
+
+---
+
+## Author
 Developed as a final Python project using Object-Oriented Programming and Click for CLI
-
-
-
-
