@@ -1,6 +1,6 @@
 # WIT – Version Control System (Git-like CLI)
 
-A lightweight version control system written in Python using OOP and the Click library.
+A lightweight version control system written in Python using OOP and the Click library.  
 WIT allows developers to track files, create commits, view history, check status, and restore previous versions – similar to a simplified Git.
 
 ---
