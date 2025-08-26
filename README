@@ -6,12 +6,12 @@ WIT allows developers to track files, create commits, view history, check status
 ---
 
 ## Features
-- `wit init` – Initialize a new repository (`.wit/` folder with staging and committed directories).
-- `wit add <file>` – Add files to the staging area for tracking.
-- `wit commit <message>` – Commit staged files with a unique hash and timestamp.
-- `wit log` – Display commit history (ID, message, date).
-- `wit status` – Show repository status and check if new commits are required.
-- `wit checkout <commit_id>` – Restore repository state to a specific commit.
+- `wit init` – Initialize a new repository (`.wit/` folder with staging and committed directories)
+- `wit add <file>` – Add files to the staging area for tracking
+- `wit commit <message>` – Commit staged files with a unique hash and timestamp
+- `wit log` – Display commit history (ID, message, date)
+- `wit status` – Show repository status and check if new commits are required
+- `wit checkout <commit_id>` – Restore repository state to a specific commit
 
 ---
 
@@ -26,8 +26,8 @@ WIT allows developers to track files, create commits, view history, check status
 ---
 
 ## Project Structure
-wit-cli/
 ```
+wit-cli/
 ├── Commit.py       # Commit class (ID, message, datetime)
 ├── FileManager.py  # File operations (copy, delete, stage, CSV handling)
 ├── Repository.py   # Core repository logic (init, add, commit, log, status, checkout)
